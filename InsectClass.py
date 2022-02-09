@@ -1,10 +1,16 @@
 import random
+from re import L
+from tkinter import W
 
 
 class Insect:
-    def __init__(self):
-        self.legs = 4
-        self.wings = 2
+    def __init__(self, w, l):
+        # self.legs = 4
+        # self.wings = 2
+        # self.flight = 0
+
+        self.legs = W
+        self.wings = L
         self.flight = 0
 
     def flight_length(self):
