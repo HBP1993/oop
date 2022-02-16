@@ -1,15 +1,16 @@
 class Car:
-    def __init__(self, make, model, year):
-
-        self.make = make
-        self.model = model
-        self.year = year
-
-    def get_descriptive_name(self):
-        long_name = f"{self.year} {self.make} {self.model}"
-        return long_name.title()
-
-
-my_new_car = Car("audi", "a4", 2019)
-
-print(my_new_car.get_descriptive_name())
+    def __init__(self,year_model, make):
+        self.__year_model = year_model
+        self.__make = make
+        self.__speed = 0
+        
+    def accelerate(self):
+        self.__speed+=5
+        
+    def brake(self):
+        self.__speed-=5
+        
+    def get_speed(self):
+        return self.__speed
+    
+    

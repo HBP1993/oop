@@ -1,13 +1,11 @@
 class CellPhone:
-    def __inti__(self, manufact, model, retail_price):
+    def __init__(self, manufact, model, retail_price):
         self.__manufact = manufact
-        self.__module = model
-        self.__price = retail_price
+        self.__model = model
+        self.__retail_price = retail_price
 
     def set_manufact(self, manufact):
         self._manufact = manufact
-
-        # return self.set_manufact
 
     def set_model(self, model):
         self._model = model
@@ -19,7 +17,7 @@ class CellPhone:
         return self.__manufact
 
     def get_model(self):
-        return self._model
+        return self.__model
 
     def get_retail_price(self):
-        return self._retail_price
+        return self.__retail_price
