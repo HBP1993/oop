@@ -5,9 +5,7 @@ from tkinter import W
 
 class Insect:
     def __init__(self, w, l):
-        # self.legs = 4
-        # self.wings = 2
-        # self.flight = 0
+
 
         self.legs = W
         self.wings = L
